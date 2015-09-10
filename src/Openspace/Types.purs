@@ -12,6 +12,14 @@ import           Data.Tuple
 import           Global (isFinite, isNaN)
 import           Prelude
 
+------------------
+--| FROSTEvent |--
+------------------
+
+data FROSTEvent = TopicClicked Topic
+
+instance showFROSTEvent :: Show FROSTEvent where
+  show (TopicClicked (Topic t)) = "clicked: " <> t.description 
 -----------------
 --| TopicType |--
 -----------------
@@ -50,6 +58,9 @@ derive instance genericTopic :: Generic Topic
 
 instance eqTopic :: Eq Topic where
   eq = gEq
+
+instance showTopic :: Show Topic where
+  show = gShow
 
 instance foreignTopic :: IsForeign Topic where
   read val = Topic <$> (

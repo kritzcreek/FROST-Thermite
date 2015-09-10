@@ -40,7 +40,6 @@ deleteTopic t as = let topicslotFilter = (/=) t <<< snd
                          , timeslots = filterMap topicslotFilter as.timeslots
                          }
 
-
 addRoom :: Room -> AppState -> AppState
 addRoom r as = as { rooms = r : as.rooms }
 
