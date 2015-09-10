@@ -1,0 +1,35 @@
+{
+  "name": "FROST-Thermite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.9.0",
+    "gulp-purescript": "^0.6.0",
+    "purescript": "0.7.3-fixed",
+    "purs-loader": "^0.3.2",
+    "react": "^0.13.3",
+    "react-modal": "^0.3.0"
+  },
+  "devDependencies": {
+    "del": "^1.2.1",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "run-sequence": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kRITZCREEK/FROST-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kRITZCREEK/FROST-Frontend/issues"
+  },
+  "homepage": "https://github.com/kRITZCREEK/FROST-Frontend"
+}
