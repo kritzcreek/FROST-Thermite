@@ -16,10 +16,17 @@ import           Prelude
 --| FROSTEvent |--
 ------------------
 
-data FROSTEvent = TopicClicked Topic
+data UIAction = TopicClicked Topic | Init
+
+instance showUIAction :: Show UIAction where
+  show (TopicClicked t) = show t
+  show Init = "init"
+
+data FROSTEvent = UI UIAction | Net Action
 
 instance showFROSTEvent :: Show FROSTEvent where
-  show (TopicClicked (Topic t)) = "clicked: " <> t.description 
+  show (UI (TopicClicked (Topic t))) = "clicked: " <> t.description
+  show _ = "FROSTEvent"
 -----------------
 --| TopicType |--
 -----------------

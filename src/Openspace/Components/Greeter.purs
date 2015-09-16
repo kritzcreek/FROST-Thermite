@@ -1,21 +1,10 @@
 module Openspace.Components.Greeter where
 
-import Prelude
-import Control.Bind
-
-import qualified Thermite as T
-import qualified Thermite.Action as T
-
-import qualified React as R
-import qualified React.DOM as R
+import Import
+import qualified Import.DOM as DOM
+import qualified Import.React as R
+import qualified Import.Thermite as T
 import qualified React.DOM.Props as RP
-
-import qualified DOM as DOM
-import qualified DOM.HTML as DOM
-import qualified DOM.HTML.Document as DOM
-import qualified DOM.HTML.Types as DOM
-import qualified DOM.HTML.Window as DOM
-import qualified DOM.Node.Types as DOM
 
 type GreeterProps = Int
 
